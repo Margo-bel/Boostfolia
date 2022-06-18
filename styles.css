@@ -1,0 +1,30 @@
+@font-face
+{
+    font-family: 'big_noodle_titling_oblique';
+    src: url('fonts/big_noodle_titling_oblique.eot');
+    src: url('fonts/big_noodle_titling_oblique.eot?#') format('embedded-opentype'),
+    url('fonts/big_noodle_titling_oblique.woff') format('woff'),
+    url('fonts/big_noodle_titling_oblique.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face
+{
+    font-family: 'big_noodle_titling';
+    src: url('fonts/big_noodle_titling.eot');
+    src: url('fonts/big_noodle_titling.eot?#') format('embedded-opentype'),
+    url('fonts/big_noodle_titling.woff') format('woff'),
+    url('fonts/big_noodle_titling.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+body, h1{
+    font-family: 'big_noodle_titling', sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer,header,
+hgroup, menu, nav, section { display: block; }
