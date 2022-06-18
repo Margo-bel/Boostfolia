@@ -7,7 +7,6 @@
     url('fonts/big_noodle_titling_oblique.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    text-rendering: optimizeLegibility;
 }
 @font-face
 {
@@ -18,13 +17,73 @@
     url('fonts/big_noodle_titling.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    text-rendering: optimizeLegibility;
 }
 
 
 body, h1{
-    font-family: 'big_noodle_titling', sans-serif;
+    font-family: 'big_noodle_titling', Arial, sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer,header,
 hgroup, menu, nav, section { display: block; }
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    background-color: #f8f6f6;
+    display: flex;
+}
+.logo_name{
+    color: #696969;
+    font-size: 38px;
+    margin: 58px auto 55px 0;
+    letter-spacing: 4px;
+    line-height: 0.78em;
+}
+
+.logo{
+    height: 45px;
+    margin: 50px 26px 43px 13.3%;
+}
+.menu{
+    display: none;
+}
+
+nav{
+    margin: 64px 189px 58px 0;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    height: 22px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.burger__line{
+    background-color: #696969;
+    width: 38px;
+    height: 2px;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+    margin-top: 20px;
+}
+.menu.active a{
+    color: #696969;
+    padding: 10px 0;
+    text-align: right;
+}
