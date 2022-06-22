@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <title>Boostfolia</title>
     <link href="http://fonts.cdnfonts.com/css/bignoodletitling" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/vag-rounded-next" rel="stylesheet">
+    <!-- ChiefSlider CSS -->
+    <link rel="stylesheet" href="chief-slider.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="chief-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('#slider', {
+                loop: true
+            });
+        });
+    </script>
 
 
 
@@ -54,7 +65,7 @@
             </div>
         <div class="menu">
             <a href="#about_us" id="about_us_id" class="menu__item">ABOUT US</a>
-            <a href="" class="menu__item">OUR WORKS</a>
+            <a href="#our_works" class="menu__item">OUR WORKS</a>
             <a href="" class="menu__item">WHO WE ARE</a>
             <a href="" class="menu__item">SOME FEATURES</a>
             <a href="" class="menu__item">BLOG POSTS</a>
@@ -63,14 +74,14 @@
         </div>
     </nav>
 </header>
-<section class="slider">
+<section class="scroll">
     <h1>WE THINK CREATIVE BE CREATIVE</h1>
     <p class="like">LIKE TO DO CREATIVE WORKS</p>
     <img alt="scroll" src="images/1.png">
     <p class="scroll_down">SCROLL DOWN</p>
 </section>
 <section class="about_us" id="about_us">
-    <h2 id>ABOUT US</h2>
+    <h2>ABOUT US</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     <div class="infocards">
         <div class="infocard">
@@ -88,6 +99,102 @@
             <h3>INFINITE UPDATES</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
+    </div>
+</section>
+<section class="watch">
+    <div class="watch__text" id="watch">
+        <h3>WATCH BEHIND THE SCENE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="button">PLAY NOW</div>
+    </div>
+    <div class="watch__video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BGoNnirbqo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="our_works" id="our_works">
+    <h2>OUR WORKS</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <div class="our_works_sections">
+        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <label for="tab-btn-1">ALL PROJECTS</label>
+        <input type="radio" name="tab-btn" id="tab-btn-2" value="" >
+        <label for="tab-btn-2">PHOTOGRAPHY</label>
+        <input type="radio" name="tab-btn" id="tab-btn-3" value="" >
+        <label for="tab-btn-3">WEB DESIGN</label>
+        <input type="radio" name="tab-btn" id="tab-btn-4" value="" >
+        <label for="tab-btn-4">BRANDING</label>
+        <input type="radio" name="tab-btn" id="tab-btn-5" value="" >
+        <label for="tab-btn-5">MOBILE APP</label>
+        <div class="content" id="content-1">
+            <div class="img"><img src="images/web1.jpg" alt=""></div>
+        <div class="img"><img src="images/sity2.jpg" alt=""></div>
+            <div class="img"><img src="images/mobile2.jpg" alt=""></div>
+    </div>
+    <div class="content" id="content-2">
+        <div class="img"><img src="images/sity1.jpg" alt=""></div>
+            <div class="img"><img src="images/sity2.jpg" alt=""></div>
+                <div class="img"><img src="images/sity3.jpg" alt=""></div>
+    </div>
+    <div  class="content" id="content-3">
+        <div class="img"><img src="images/web1.jpg" alt=""></div>
+            <div class="img"><img src="images/web2.jpg" alt=""></div>
+                <div class="img"><img src="images/web3.jpg" alt=""></div>
+    </div>
+    <div  class="content" id="content-4">
+        <div class="img"><img src="images/brand1.jpg" alt=""></div>
+            <div class="img"><img src="images/brand2.jpg" alt=""></div>
+                <div class="img"><img src="images/web1.jpg" alt=""></div>
+    </div>
+    <div  class="content" id="content-5">
+        <div class="img"><img src="images/mobile1.jpg" alt=""></div>
+            <div class="img"><img src="images/mobile2.jpg" alt=""></div>
+                <div class="img"><img src="images/mobile3.jpg" alt=""></div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="clients">
+    <div class="container">
+    <div class="slider" id="slider">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                     <img class="frame themeforest__frame" alt="" src="images/po.png">
+                     <p>themeforest</p>
+                </div>
+                <div class="slider__item">
+                    <img class="frame graphicriver__frame" alt="" src="images/fish.png">
+                    <p>graphicriver</p>
+                </div>
+                <div class="slider__item">
+                    <img class="frame videohive__frame" alt="" src="images/bee.png">
+                    <p>videohive</p>
+                </div>
+                <div class="slider__item">
+                    <img class="frame themeforest__frame" alt="" src="images/po.png">
+                    <p>themeforest</p>
+                </div>
+                <div class="slider__item">
+                    <img class="frame graphicriver__frame" alt="" src="images/fish.png">
+                    <p>graphicriver</p>
+                </div>
+                <div class="slider__item">
+                    <img class="frame videohive__frame" alt="" src="images/bee.png">
+                    <p>videohive</p>
+                </div>
+            </div>
+        </div>
+        <!-- Кнопки -->
+        <a href="#" class="slider__control slider__control__left" data-slide="prev"></a>
+        <a href="#" class="slider__control slider__control__right" data-slide="next"></a>
+    </div>
     </div>
 </section>
 
