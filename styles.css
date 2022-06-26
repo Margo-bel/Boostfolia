@@ -759,6 +759,101 @@ input[type="radio"]:checked+label:after {
     display: inline;
 }
 
+.chose_plan{
+    background-color: #171f23;
+    height: 705px;
+}
+
+.chose_plan h3{
+    font-size: 33px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #f6f6f6;
+    padding-top: 55px;
+    font-family: Helvetica, sans-serif;
+}
+
+.chose_plan h3::after {
+    content: "";
+    width: 88px;
+    height: 1px;
+    background-color: #696969;
+    margin: 15px auto 0 auto;
+    display: block;
+}
+
+.prising_cards{
+    display:flex;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 56px;
+    height: 705px;
+}
+
+.prising_card{
+    width: 232px;
+    background-color: #1f282c;
+    height: 450px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: #efefef;
+}
+
+.prising_card_header{
+    background-color: #0e1316;
+    width: 100%;
+    height: 128px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.prising_card>p {
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.prising_card_header p:first-child{
+    font-size: 16px;
+    padding-top: 37px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.prising_card_header p:nth-child(2){
+    font-size: 37px;
+    padding-top: 0;
+}
+
+.prising_card_header span{
+    font-size: 25px;
+}
+
+.prising_card span{
+    font-weight: bold;
+}
+.purchase_button{
+    width: 126px;
+    height: 25px;
+    color: #fcd1c3;
+    margin: 74px auto auto auto;
+    background-color: #f6744b;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-top: 9px;
+}
+
+.prising_card:hover{
+    border:  1px solid #f6744b;
+}
+
+.prising_card:hover>p span{
+    color: #f6744b;
+}
 
 
 
@@ -813,8 +908,6 @@ input[type="radio"]:checked+label:after {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-
-
     }
 
     .skill_name, .percentage{
@@ -853,6 +946,11 @@ input[type="radio"]:checked+label:after {
         grid-template-rows: auto auto auto;
         grid-column-gap: 22px;
         margin: 0 auto;
+    }
+
+    .blog_posts{
+        height: auto;
+        background-color: white;
     }
 }
 
