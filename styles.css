@@ -281,7 +281,7 @@ nav{
     color: #696969;
     font-size: 14px;
     font-family: Helvetica, sans-serif;
-    margin: 23px 25% 81px 25%;
+    margin: 23px 31% 81px 31%;
     text-align: center;
 }
 
@@ -325,7 +325,7 @@ input[type="radio"] {
     text-align: center;
 }
 
-label{
+.our_works_sections label{
     display: inline-block;
     text-align: center;
     color: #3d3d3d;
@@ -334,7 +334,7 @@ label{
     letter-spacing: 0.5px;
     padding-left: 37px;
 }
-label:first-of-type {
+.our_works_sections label:first-of-type {
     padding-left: 0;
 }
 
@@ -855,6 +855,159 @@ input[type="radio"]:checked+label:after {
     color: #f6744b;
 }
 
+.touch h2{
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #3d3d3d;
+    padding-top: 75px;
+}
+.touch h2::after {
+    content: "";
+    width: 153px;
+    height: 2px;
+    background-color: #f6744b;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.touch > p {
+    color: #696969;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    margin: 25px 31% 70px 31%;
+    text-align: center;}
+
+form{
+    width: 779px;
+    height: 328px;
+    margin-top: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 83px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 16px 53px 64px 80px 115px;
+    grid-template-areas: "label_name label_mail"
+    "input_name input_mail"
+"label_massage label_massage"
+"input_massage input_massage"
+"button button";
+    grid-column-gap: 29px;
+
+}
+form label{
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #3d3d3d;
+
+
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #696969;
+}
+
+label[for="name"]{
+    grid-area: label_name;
+    justify-self: start;
+}
+label[for="mail"]{
+    grid-area: label_mail;
+    justify-self: start;
+}
+label[for="massage"]{
+    grid-area: label_massage;
+    align-self: end;
+}
+
+#name{
+    grid-area: input_name;
+}
+#mail{
+    grid-area: input_mail;
+}
+#massage{
+    grid-area: input_massage;
+}
+form button{
+    grid-area: button;
+    width: 203px;
+    height: 51px;
+    margin: 0 auto;
+    color: white;
+    background-color: #f6744b;
+    align-self: end;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+label span{
+    color: #f6744b;
+}
+
+
+
+.accordion {
+    background-color: #0c1215;
+    color: #fff;
+    cursor: pointer;
+    padding: 27px 0 28px 31px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    transition: 0.4s;
+}
+
+.accordion img{
+    margin-left: 10px;
+}
+
+.panel {
+    padding: 0;
+    display: none;
+    background-color: #171f23;
+    overflow: hidden;
+}
+.creators{
+    background-color: #171f23;
+    text-align: center;
+    color: white;
+    height: 238px;
+}
+
+.creators>img{
+    margin-top: 49px;
+}
+
+.creators p{
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.creators p:first-of-type{
+    font-family: 'big_noodle_titling', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
 
 
 
@@ -884,35 +1037,38 @@ input[type="radio"]:checked+label:after {
         grid-template-rows: 430px 430px;
     }
 
-    #tab-btn-1:checked~#content-1,
-    #tab-btn-2:checked~#content-2,
-    #tab-btn-3:checked~#content-3,
-    #tab-btn-4:checked~#content-4,
-    #tab-btn-5:checked~#content-5{
+    #tab-btn-1:checked ~ #content-1,
+    #tab-btn-2:checked ~ #content-2,
+    #tab-btn-3:checked ~ #content-3,
+    #tab-btn-4:checked ~ #content-4,
+    #tab-btn-5:checked ~ #content-5 {
         display: flex;
         flex-direction: column;
-        margin:0;
-        padding:0;
-     }
+        margin: 0;
+        padding: 0;
+    }
+
     .content {
         height: 100%;
         width: 100%;
     }
 
-    .content .img{
+    .content .img {
         height: auto;
         width: auto;
         overflow: hidden;
     }
-    .designer_card{
+
+    .designer_card {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
     }
 
-    .skill_name, .percentage{
+    .skill_name, .percentage {
         font-size: 12px;
     }
+
     .slider__item {
         flex: 0 0 100%;
         max-width: 100%;
@@ -924,7 +1080,7 @@ input[type="radio"]:checked+label:after {
         font-family: 'VAG Rounded Next', sans-serif;
     }
 
-    .features_cards{
+    .features_cards {
         display: grid;
         max-width: 895px;
         margin: 44px auto 0 auto;
@@ -934,12 +1090,12 @@ input[type="radio"]:checked+label:after {
         font-family: Helvetica, sans-serif;
     }
 
-    .features{
+    .features {
         background-color: #171f23;
         height: auto;
     }
 
-    .blog_cards{
+    .blog_cards {
         max-width: 1004px;
         display: grid;
         grid-template-columns: 1fr;
@@ -948,12 +1104,51 @@ input[type="radio"]:checked+label:after {
         margin: 0 auto;
     }
 
-    .blog_posts{
+    .blog_posts {
         height: auto;
         background-color: white;
     }
-}
 
+    .prising_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 450px;
+        gap: 2px;
+        justify-items: center;
+        margin-top: 56px;
+    }
+
+    .chose_plan {
+        height: 1100px;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+        margin-top: 92px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 83px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 0;
+        grid-template-rows: 16px 53px 16px 53px 16px 80px 115px;
+        grid-template-areas: "label_name"
+         "input_name"
+        "label_mail"
+        "input_mail"
+        "label_massage"
+        "input_massage"
+        "button";
+    }
+
+    form label{
+        justify-self: start;
+    }
+    form button{
+        justify-self: start;
+    }
+}
 
 
 
